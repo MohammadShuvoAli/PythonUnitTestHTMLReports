@@ -2,6 +2,7 @@ from selenium import webdriver
 import unittest
 import HtmlTestRunner
 from selenium.webdriver.common.by import By
+import os
 
 
 class OrangeHRMTest(unittest.TestCase):
@@ -30,4 +31,4 @@ class OrangeHRMTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="..//Reports"))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output= os.getcwd() + "\\Reports"))
