@@ -3,8 +3,6 @@ import unittest
 import HtmlTestRunner
 from selenium.webdriver.common.by import By
 import os
-
-
 class OrangeHRMTest(unittest.TestCase):
 
     @classmethod
