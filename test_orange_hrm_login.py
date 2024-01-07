@@ -22,7 +22,7 @@ class OrangeHRMTest(unittest.TestCase):
         self.driver.find_element(By.XPATH, "//input[@placeholder='Username']").send_keys("Admin")
         self.driver.find_element(By.XPATH, "//input[@placeholder='Password']").send_keys("admin123")
         self.driver.find_element(By.XPATH, "//button[@type='submit']").click()
-        self.assertEqual("OrangeHRM", self.driver.title, "webpage title did not match")
+        self.assertEqual()("OrangeHRM", self.driver.title, "webpage title did not match")
 
     @classmethod
     def tearDownClass(cls):
